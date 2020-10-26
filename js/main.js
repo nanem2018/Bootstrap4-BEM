@@ -13,7 +13,15 @@ $(document).ready(function () {
           }
        }
     });
-  
+  /*Слайдер*/
+  $(document).ready(function(){
+   $('.multiple-items').slick({
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       dots: true
+
+   });
+ });
     /* Меню */
     $('ul.menu a[href^="#"').click(function () {
        var target = $(this).attr('href');
